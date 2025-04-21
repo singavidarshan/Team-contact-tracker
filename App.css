@@ -1,0 +1,110 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+form button {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+form button:hover {
+  background-color: #0056b3;
+}
+.cards-container {
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+.contact-card {
+  background: #fafafa;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.1);
+}
+.contact-card strong {
+  font-size: 18px;
+  color: #333;
+}
+.contact-card span {
+  color: #555;
+  font-style: italic;
+}
+.contact-card p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #444;
+}
+.contact-card div {
+  margin-top: 12px;
+}
+.contact-card button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact-card button:first-child {
+  background-color: #ffc107;
+  color: #000;
+}
+.contact-card button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+.contact-card button:first-child:hover {
+  background-color: #e0a800;
+}
+.contact-card button:last-child:hover {
+  background-color: #c82333;
+}
